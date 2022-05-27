@@ -1,0 +1,1220 @@
+/* 
+
+
+MOBILE
+
+
+continuation, same as javascript
+
+
+*/
+
+
+
+
+
+
+@media screen 
+  and (min-device-width: 0px) 
+  and (max-device-width: 650px)  { 
+  
+
+
+  body {
+    font-family: 'Roboto Flex', sans-serif;
+    /* display: grid;
+    grid-template-rows: 15em 1fr; */
+    color: #1a1a1a;
+    /* background-color: #a4debf; */
+    padding: 5%;
+    margin: 0;
+    height: 100%;
+}
+
+header {
+    margin-bottom: 5em;
+}
+
+
+article {
+    margin-bottom: 2em;
+}
+
+#site-logo {
+    display: grid;
+    /* padding: 5% 10%; */
+}
+
+#site-logo {
+    justify-self: center;
+}
+
+.site-logo-img {
+    width: 20em;
+    justify-self: center;
+}
+
+
+#intro-text {
+    font-size: 1em;
+    margin: 0.5em 0 0.5em 0;
+    justify-self: center;
+}
+
+
+#player-info {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+#mascot {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.btn {
+    display: grid;
+    grid-template-rows: 1fr 2em;
+    justify-items: center;
+}
+
+#flip {
+    display: grid;
+    grid-template-rows: 1fr 2em;
+}
+
+.sym-flip-img {
+    width: 1.8em;
+    
+}
+
+.sym-text {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+.player {
+    display: grid;
+    margin-bottom: 2em;
+    font-size: 1.1em;
+}
+
+
+input {
+    font-size: 1.6em;/* padding-left: 2px; */
+    padding: 0.2em 0.2em;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    background-color: #cccccc;
+    color: #1a1a1a;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+
+
+
+label {
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+.symbol {
+    font-size: 2em;
+}
+
+
+.symbol:hover {
+    cursor: pointer;
+}
+
+
+
+
+.start-btn-img {
+    width: 7em;
+}
+
+/* 
+.symbol-btn {
+    width: 6em;
+    height: 4em;
+    background-image: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+    background-color: #0083B0;
+    border: none;
+    border-radius: 2px;
+    display: block;
+} */
+
+
+
+#player-profiles {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+
+
+
+
+
+
+/* toss article */
+
+#toss-article {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+
+.toss-winner-section {
+    font-size: 1.2em;
+}
+
+.toss-winner-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+.selected-symbol-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.player-one-section {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.player-one-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+
+.player-two-section {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.player-two-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+
+
+
+
+
+#winner-article {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+
+
+.game-winner {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #008080;
+}
+
+
+
+
+.scorecard-article {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+
+.scorecard-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+
+.p1-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.p1-name, .p2-name {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+
+.p1-wins-title {
+    justify-self: center;
+}
+
+
+.p1-wins, .p1-wins-title, .p2-wins, .p2-wins-title {
+    color: #008080;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.p1-losses, .p1-losses-title, .p2-losses, .p2-losses-title {
+    color: #ef0041;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+
+.p2-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+
+
+.p2-wins-title {
+    justify-self: center;
+}
+
+
+
+
+
+
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 7em 7em 7em;
+}
+
+
+.grid-area {
+    display: grid;
+}
+
+
+.current-grid {
+    display: grid;
+    grid-template-columns: 7em 7em 7em;
+    justify-self: center;
+}
+
+
+
+
+
+
+
+
+
+.display-symbol {
+    display: none;
+}
+
+.cell {
+    width: 7em;
+    height: 7em;
+    border: 0.2em solid #1a1a1a;
+}
+
+.cell-1, .cell-4, .cell-7 {
+    border-right: none;
+}
+
+.cell-1, .cell-4, .cell-2, .cell-5, .cell-3, .cell-6{
+    border-bottom: none;
+}
+
+
+.cell-3, .cell-6, .cell-9 {
+    border-left: none;
+}
+
+
+
+
+.reload-img {
+    width: 7em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    justify-self: right;
+    color:#777777;
+}
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+
+TABLET
+
+
+
+*/
+
+
+
+
+
+@media screen 
+  and (min-device-width: 650px) 
+  and (max-device-width: 1200px) 
+ {
+ 
+
+
+    
+
+
+    body {
+        font-family: 'Roboto Flex', sans-serif;
+        /* display: grid;
+        grid-template-rows: 15em 1fr; */
+        color: #1a1a1a;
+        padding: 1%;
+        margin: 0;
+    }
+    
+    header {
+        margin-bottom: 4em;
+    }
+    
+
+    
+    #site-logo {
+        display: grid;
+        justify-self: center;
+    }
+    
+
+
+
+    #logo-image-section {
+        justify-self: center;
+    }
+    
+    .site-logo-img {
+        width: 20em;
+        justify-self: center;
+    }
+    
+    
+    #intro-text {
+        font-size: 1em;
+        margin: 0.5em 0 0.5em 0;
+        justify-self: center;
+    }
+    
+    
+    #player-info {
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+    
+    #mascot {
+        display: grid;
+        grid-template-columns: 40% 20% 40%;
+        width: 40%;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    
+    .btn {
+        display: grid;
+        grid-template-rows: 1fr 2em;
+        justify-items: center;
+    }
+    
+    #flip {
+        display: grid;
+        grid-template-rows: 1fr 2em;
+    }
+    
+    .sym-flip-img {
+        width: 1.8em;
+        
+    }
+
+    .sym-flip-img:hover {
+        cursor: pointer;
+        
+    }
+    
+    .sym-text {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    
+    
+    .player {
+        display: grid;
+        margin-bottom: 2em;
+        font-size: 1.1em;
+    }
+    
+    
+    input {
+        font-size: 1.6em;/* padding-left: 2px; */
+        padding: 0.2em 0.2em;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        background-color: #cccccc;
+        color: #1a1a1a;
+        letter-spacing: 1px;
+        margin: 0;
+    }
+    
+    
+    
+    
+    label {
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: bold;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .symbol {
+        font-size: 2em;
+    }
+    
+    
+    .symbol:hover {
+        cursor: pointer;
+    }
+    
+    
+    
+    
+    .start-btn-img {
+        width: 7em;
+    }
+
+    .start-btn-img:hover {
+        cursor: pointer;
+    }
+    
+    /* 
+    .symbol-btn {
+        width: 6em;
+        height: 4em;
+        background-image: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+        background-color: #0083B0;
+        border: none;
+        border-radius: 2px;
+        display: block;
+    } */
+    
+    
+    
+    #player-profiles {
+        display: grid;
+        grid-template-rows: 1fr;
+        justify-items: center;
+    }
+
+
+
+
+
+
+
+/* toss article */
+
+#toss-article {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+
+.toss-winner-section {
+    font-size: 1.2em;
+}
+
+.toss-winner-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+.selected-symbol-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.player-one-section {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.player-one-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+
+.player-two-section {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.player-two-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+
+
+
+
+
+#winner-article {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 1em;
+}
+
+
+.game-winner {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #008080;
+}
+
+
+
+
+.scorecard-article {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+
+.scorecard-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+
+.p1-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.p1-name, .p2-name {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+
+.p1-wins-title {
+    justify-self: center;
+}
+
+
+.p1-wins, .p1-wins-title, .p2-wins, .p2-wins-title {
+    color: #008080;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.p1-losses, .p1-losses-title, .p2-losses, .p2-losses-title {
+    color: #ef0041;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+
+.p2-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+
+
+.p2-wins-title {
+    justify-self: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    .grid {
+        display: grid;
+        grid-template-columns: 7em 7em 7em;
+    }
+    
+    
+    .grid-area {
+        display: grid;
+    }
+    
+    
+    .current-grid {
+        display: grid;
+        grid-template-columns: 7em 7em 7em;
+        justify-self: center;
+    }
+
+
+
+    
+    .display-symbol {
+        display: none;
+    }
+    
+    .cell {
+        width: 7em;
+        height: 7em;
+        border: 0.2em solid #1a1a1a;
+    }
+    
+    .cell-1, .cell-4, .cell-7 {
+        border-right: none;
+    }
+    
+    .cell-1, .cell-4, .cell-2, .cell-5, .cell-3, .cell-6{
+        border-bottom: none;
+    }
+    
+    
+    .cell-3, .cell-6, .cell-9 {
+        border-left: none;
+    }
+    
+
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    justify-self: right;
+    color:#777777;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+LAPTOP
+
+
+*/
+
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) { 
+
+
+
+
+
+
+    body {
+        font-family: 'Roboto Flex', sans-serif;
+        /* display: grid;
+        grid-template-rows: 15em 1fr; */
+        color: #1a1a1a;
+        padding: 1%;
+        margin: 0;
+    }
+    
+    header {
+        margin-bottom: 1em;
+    }
+    
+/*     
+    article {
+        margin-bottom: 2em;
+    } */
+    
+    #site-logo {
+        display: grid;
+        /* padding: 5% 10%; */
+    }
+    
+    #site-logo {
+        justify-self: center;
+    }
+
+    #logo-image-section {
+        justify-self: center;
+    }
+    
+    .site-logo-img {
+        width: 15em;
+        justify-self: center;
+    }
+    
+    
+    #intro-text {
+        font-size: 1em;
+        margin: 0.5em 0 0.5em 0;
+        justify-self: center;
+    }
+    
+    
+    #player-info {
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+    
+    #mascot {
+        display: grid;
+        grid-template-columns: 40% 20% 40%;
+        width: 40%;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    
+    .btn {
+        display: grid;
+        grid-template-rows: 1fr 2em;
+        justify-items: center;
+    }
+    
+    #flip {
+        display: grid;
+        grid-template-rows: 1fr 2em;
+    }
+    
+    .sym-flip-img {
+        width: 1.8em;
+        
+    }
+
+    .sym-flip-img:hover {
+        cursor: pointer;
+        
+    }
+    
+    .sym-text {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    
+    
+    .player {
+        display: grid;
+        margin-bottom: 2em;
+        font-size: 1.1em;
+    }
+    
+    
+    input {
+        font-size: 1.6em;/* padding-left: 2px; */
+        padding: 0.2em 0.2em;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        background-color: #cccccc;
+        color: #1a1a1a;
+        letter-spacing: 1px;
+        margin: 0;
+    }
+    
+    
+    
+    
+    label {
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: bold;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .symbol {
+        font-size: 2em;
+    }
+    
+    
+    .symbol:hover {
+        cursor: pointer;
+    }
+    
+    
+    
+    
+    .start-btn-img {
+        width: 7em;
+    }
+
+    .start-btn-img:hover {
+        cursor: pointer;
+    }
+    
+    /* 
+    .symbol-btn {
+        width: 6em;
+        height: 4em;
+        background-image: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+        background-color: #0083B0;
+        border: none;
+        border-radius: 2px;
+        display: block;
+    } */
+    
+    
+    
+    #player-profiles {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    
+
+
+
+
+
+    
+
+
+/* toss article */
+
+#toss-article {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+
+.toss-winner-section {
+    font-size: 1.2em;
+}
+
+.toss-winner-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+.selected-symbol-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.player-one-section {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.player-one-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+
+.player-two-section {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.player-two-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+
+
+
+
+
+#winner-article {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 1em;
+}
+
+
+.game-winner {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #008080;
+}
+
+
+
+
+.scorecard-article {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+
+.scorecard-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+
+.p1-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.p1-name, .p2-name {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+
+.p1-wins-title {
+    justify-self: center;
+}
+
+
+.p1-wins, .p1-wins-title, .p2-wins, .p2-wins-title {
+    color: #008080;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.p1-losses, .p1-losses-title, .p2-losses, .p2-losses-title {
+    color: #ef0041;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+
+.p2-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+
+
+.p2-wins-title {
+    justify-self: center;
+}
+
+
+
+
+
+
+
+
+
+
+    #grid-area {
+        display: grid;
+        margin-bottom: 1em;
+    }
+    
+    
+    .current-grid {
+        display: grid;
+        grid-template-columns: 7em 7em 7em;
+        justify-self: center;
+    }
+    
+    /* .new-grid {
+        display: grid;
+        grid-template-columns: 7em 7em 7em;
+        justify-self: center;
+    } */
+    
+    
+    .display-symbol {
+        display: none;
+    }
+    
+    .cell {
+        width: 7em;
+        height: 7em;
+        border: 0.2em solid #1a1a1a;
+    }
+    
+    .cell-1, .cell-4, .cell-7 {
+        border-right: none;
+    }
+    
+    .cell-1, .cell-4, .cell-2, .cell-5, .cell-3, .cell-6{
+        border-bottom: none;
+    }
+    
+    
+    .cell-3, .cell-6, .cell-9 {
+        border-left: none;
+    }
+    
+
+
+
+    .reload-img:hover {
+        cursor: pointer;
+    }   
+
+
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    justify-self: right;
+    color:#777777;
+}
+
+
+}
+
+
+
+
+
