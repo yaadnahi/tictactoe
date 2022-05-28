@@ -20,16 +20,25 @@ continuation, same as javascript
   
 
 
-  body {
+
+
+body {
     font-family: 'Roboto Flex', sans-serif;
-    /* display: grid;
-    grid-template-rows: 15em 1fr; */
+
     color: #1a1a1a;
-    /* background-color: #a4debf; */
-    padding: 5%;
+    padding: 2% 0;
     margin: 0;
-    height: 100%;
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
 }
+
+body::after {
+    content: '';
+    display: block;
+    height: 2em;
+}
+
 
 header {
     margin-bottom: 5em;
@@ -78,6 +87,11 @@ article {
 
 #sym-img-one, #sym-img-two {
     width: 1em;
+}
+
+
+#start {
+    justify-self: center;
 }
 
 
@@ -403,13 +417,14 @@ label {
 
 
 
-
 footer{
-    position: fixed;
-    bottom: 0;
-    justify-self: right;
+    width: 100%;
+    height: 2em;
     color:#777777;
-}
+    position: absolute;
+    bottom: 0;
+    
+} 
 
 
 
@@ -465,9 +480,18 @@ TABLET
         /* display: grid;
         grid-template-rows: 15em 1fr; */
         color: #1a1a1a;
-        padding: 1%;
+        padding: 2% 0;
         margin: 0;
+        margin: 0;
+        min-height: 100vh;
+        position: relative;
     }
+    body::after {
+        content: '';
+        display: block;
+        height: 2em;
+    }
+    
     
     header {
         margin-bottom: 4em;
@@ -500,10 +524,12 @@ TABLET
     }
     
     
-    #player-info {
-        display: grid;
-        grid-template-rows: 1fr;
-    }
+
+        #player-info {
+            display: grid;
+            grid-template-rows: 10em 6em 4em;
+            justify-items: center;
+        }
     
     #mascot {
         display: grid;
@@ -633,6 +659,7 @@ TABLET
     display: grid;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
+    margin-bottom: 2em;
 }
 
 .toss-winner-section {
@@ -819,12 +846,14 @@ TABLET
 
 
 
-footer{
-    position: fixed;
-    bottom: 0;
-    justify-self: right;
-    color:#777777;
-}
+    footer{
+        width: 100%;
+        height: 2em;
+        color:#777777;
+        position: absolute;
+        bottom: 0;
+        
+    } 
     
     
     
@@ -861,19 +890,25 @@ LAPTOP
 
 
 
-
-
     body {
         font-family: 'Roboto Flex', sans-serif;
         /* display: grid;
         grid-template-rows: 15em 1fr; */
         color: #1a1a1a;
-        padding: 1%;
+        padding: 2% 0;
         margin: 0;
+        min-height: 100vh;
+        position: relative;
+    }
+
+    body::after {
+        content: '';
+        display: block;
+        height: 2em;
     }
     
     header {
-        margin-bottom: 1em;
+        margin-bottom: 2em;
     }
     
 /*     
@@ -909,13 +944,14 @@ LAPTOP
     
     #player-info {
         display: grid;
-        grid-template-rows: 1fr;
+        grid-template-rows: 10em 6em 4em;
+        justify-items: center;
     }
     
     #mascot {
         display: grid;
         grid-template-columns: 40% 20% 40%;
-        width: 40%;
+        width: 30%;
         justify-items: center;
         align-items: center;
     }
@@ -1045,6 +1081,7 @@ LAPTOP
     display: grid;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
+    margin-bottom: 2em;
 }
 
 .toss-winner-section {
@@ -1231,11 +1268,16 @@ LAPTOP
 
 
 footer{
-    position: fixed;
-    bottom: 0;
-    justify-self: right;
+    width: 100%;
+    height: 2em;
     color:#777777;
-}
+    position: absolute;
+    bottom: 0;
+    
+} 
+
+
+
 
 
 }

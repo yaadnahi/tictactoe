@@ -74,7 +74,7 @@ let playerTwoNameField = document.getElementById('p2-name');
 
 
         if( playerOneNameField.value == "" || playerTwoNameField.value == ""){
-            alert(`Add your good names first to start the FUN journey. I too hate alerts.`);
+            alert(`Add your good names first to start the FUN journey. I hate alerts too.`);
         } else if(playerOneNameField.value != "" || playerOneNameField.value != "") {
             playerOne = playerOneNameField.value;
             playerTwo = playerTwoNameField.value;
@@ -529,7 +529,7 @@ symbolOneBTN.addEventListener('mouseover', () => {
     symOneImg = document.getElementById('sym-img-one');
     symOneImg.src = 'cross-hover.png';
     symImageOne.style.width = '1.5em';
-    symOneImg.style.transitionDuration = '0.5s';
+    symOneImg.style.transitionDuration = '0.1s';
 });
 
 
@@ -538,7 +538,7 @@ symbolOneBTN.addEventListener('mouseout', () => {
     symOneImg.src = 'cross.png';
     symImageOne.style.width = '1em';
 
-    symOneImg.style.transitionDuration = '0.5s';
+    symOneImg.style.transitionDuration = '0.1s';
 });
 
 
@@ -549,7 +549,7 @@ symbolTwoBTN.addEventListener('mouseover', () => {
     symTwoImg = document.getElementById('sym-img-two');
     symTwoImg.src = 'circle-hover.png';
     symTwoImg.style.width = '1.5em';
-    symTwoImg.style.transitionDuration = '0.5s';
+    symTwoImg.style.transitionDuration = '0.1s';
 });
 
 
@@ -557,7 +557,7 @@ symbolTwoBTN.addEventListener('mouseout', () => {
     symTwoImg = document.getElementById('sym-img-two');
     symTwoImg.src = 'circle.png';
     symImageTwo.style.width = '1em';
-    symTwoImg.style.transitionDuration = '0.5s';
+    symTwoImg.style.transitionDuration = '0.1s';
 });
 
 
@@ -873,9 +873,19 @@ function diagonalCheck() {
 
 function drawCheck() {
 
-    if((c1.innerHTML != c2.innerHTML && c2.innerHTML != c3.innerHTML) ||
-    (c1.innerHTML != c4.innerHTML && c4.innerHTML != c7.innerHTML) ||
-    (c1.innerHTML != c5.innerHTML && c5.innerHTML != c9.innerHTML)
+
+
+    // remember this - - -  ||| \ / check for rows, cols and diagonals
+    // Rows
+    if( 
+        (c1.innerHTML != c2.innerHTML && c2.innerHTML != c3.innerHTML) ||
+        (c4.innerHTML != c5.innerHTML && c5.innerHTML != c6.innerHTML) ||
+        (c7.innerHTML != c8.innerHTML && c8.innerHTML != c9.innerHTML) || 
+        (c1.innerHTML != c4.innerHTML && c4.innerHTML != c7.innerHTML) ||
+        (c2.innerHTML != c5.innerHTML && c5.innerHTML != c8.innerHTML) ||
+        (c3.innerHTML != c6.innerHTML && c6.innerHTML != c9.innerHTML) ||
+        (c3.innerHTML != c6.innerHTML && c6.innerHTML != c9.innerHTML) ||    
+        (c3.innerHTML != c5.innerHTML && c5.innerHTML != c7.innerHTML) 
     
     ) {
         console.log('Match tied');
@@ -1019,8 +1029,15 @@ for(let i=0; i<gridElementsArray.length; i++) {
     
     
                 if(turnCounter == 9) {
-                    return drawCheck();
-                }
+                    rowCheck();
+                    colCheck();
+                    diagonalCheck();
+
+                    if(matchFound == false) {
+                        return drawCheck();
+                    }
+
+                } 
 
                 if(matchFound == true) {
                     console.log('match found.');
