@@ -76,6 +76,13 @@ article {
 }
 
 
+#sym-img-one, #sym-img-two {
+    width: 1em;
+}
+
+
+
+
 .btn {
     display: grid;
     grid-template-rows: 1fr 2em;
@@ -106,7 +113,7 @@ article {
 
 
 input {
-    font-size: 1.6em;/* padding-left: 2px; */
+    font-size: 1.4em;/* padding-left: 2px; */
     padding: 0.2em 0.2em;
     border: 1px solid #cccccc;
     border-radius: 3px;
@@ -304,7 +311,9 @@ label {
 
 
 
-
+#logo-image-section {
+    justify-self: center;
+}
 
 
 
@@ -396,7 +405,7 @@ label {
 
 
 footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     justify-self: right;
     color:#777777;
@@ -504,7 +513,14 @@ TABLET
         align-items: center;
     }
     
+    #sym-img-one, #sym-img-two {
+        width: 1em;
+    }
     
+    
+
+
+
     .btn {
         display: grid;
         grid-template-rows: 1fr 2em;
@@ -540,7 +556,7 @@ TABLET
     
     
     input {
-        font-size: 1.6em;/* padding-left: 2px; */
+        font-size: 1.4em;/* padding-left: 2px; */
         padding: 0.2em 0.2em;
         border: 1px solid #cccccc;
         border-radius: 3px;
@@ -804,7 +820,7 @@ TABLET
 
 
 footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     justify-self: right;
     color:#777777;
@@ -904,6 +920,16 @@ LAPTOP
         align-items: center;
     }
     
+
+
+    #sym-img-one, #sym-img-two {
+        width: 1em;
+    }
+    
+
+
+
+
     
     .btn {
         display: grid;
@@ -940,7 +966,7 @@ LAPTOP
     
     
     input {
-        font-size: 1.6em;/* padding-left: 2px; */
+        font-size: 1.4em;/* padding-left: 2px; */
         padding: 0.2em 0.2em;
         border: 1px solid #cccccc;
         border-radius: 3px;
@@ -1205,7 +1231,7 @@ LAPTOP
 
 
 footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     justify-self: right;
     color:#777777;

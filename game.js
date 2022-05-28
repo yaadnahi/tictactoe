@@ -528,6 +528,7 @@ function gridRemover() {
 symbolOneBTN.addEventListener('mouseover', () => {
     symOneImg = document.getElementById('sym-img-one');
     symOneImg.src = 'cross-hover.png';
+    symImageOne.style.width = '1.5em';
     symOneImg.style.transitionDuration = '0.5s';
 });
 
@@ -535,6 +536,8 @@ symbolOneBTN.addEventListener('mouseover', () => {
 symbolOneBTN.addEventListener('mouseout', () => {
     symOneImg = document.getElementById('sym-img-one');
     symOneImg.src = 'cross.png';
+    symImageOne.style.width = '1em';
+
     symOneImg.style.transitionDuration = '0.5s';
 });
 
@@ -543,16 +546,18 @@ symbolOneBTN.addEventListener('mouseout', () => {
 // SYMBOL TWO
 
 symbolTwoBTN.addEventListener('mouseover', () => {
-    symOneImg = document.getElementById('sym-img-two');
-    symOneImg.src = 'circle-hover.png';
-    symOneImg.style.transitionDuration = '0.5s';
+    symTwoImg = document.getElementById('sym-img-two');
+    symTwoImg.src = 'circle-hover.png';
+    symTwoImg.style.width = '1.5em';
+    symTwoImg.style.transitionDuration = '0.5s';
 });
 
 
 symbolTwoBTN.addEventListener('mouseout', () => {
-    symOneImg = document.getElementById('sym-img-two');
-    symOneImg.src = 'circle.png';
-    symOneImg.style.transitionDuration = '0.5s';
+    symTwoImg = document.getElementById('sym-img-two');
+    symTwoImg.src = 'circle.png';
+    symImageTwo.style.width = '1em';
+    symTwoImg.style.transitionDuration = '0.5s';
 });
 
 
