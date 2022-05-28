@@ -339,7 +339,7 @@ label {
 }
 
 
-.grid-area {
+#grid-area {
     display: grid;
 }
 
@@ -806,7 +806,7 @@ TABLET
     }
     
     
-    .grid-area {
+    #grid-area {
         display: grid;
     }
     
